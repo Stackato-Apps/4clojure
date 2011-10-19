@@ -7,7 +7,6 @@
 
 (defn connect-to-db []
   (let [{:keys [db-user db-pwd db-host db-port db-dbname]} config]
-    (println "mongo connect: " db-user db-pwd db-host db-port db-dbname)
     (mongo!
      :host (or db-host "localhost")
      :port db-port

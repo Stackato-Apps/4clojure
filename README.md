@@ -3,6 +3,13 @@
 An interactive problem website for learning Clojure:
 [https://www.4clojure.com](https://www.4clojure.com).
 
+## Deploying to Stackato
+
+```bash
+$ lein deps
+$ stackato push -n
+```
+
 ## Contributing
 
 Anyone interested in contributing should check out

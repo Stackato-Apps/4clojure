@@ -1,0 +1,13 @@
+name: 4clojure
+
+mem: 512M
+
+services:
+  mongodb: mongo-4clojure
+
+env:
+  JVM_OPTS: "-Duser.home=$HOME"
+
+hooks:
+  pre-running:
+    - cp java.policy $HOME/.java.policy

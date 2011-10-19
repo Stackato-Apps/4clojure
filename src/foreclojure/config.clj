@@ -3,7 +3,7 @@
         [clj-config.core :only [safely read-config]]
         [cheshire.core :only (parse-string)]))
 
-(defn- running-in-cloud? []
+(defn running-in-cloud? []
   (boolean (System/getenv "VCAP_APP_PORT")))
 
 (defn- assoc-cloud-env

@@ -1,8 +1,10 @@
 {:wrap-reload false
  :db-host "localhost"
+ :db-port 27017
  :db-user nil
  :db-pwd nil
- :jetty-port 8080
+ :db-dbname "mydb"
+ :jetty-port "8080"
  :host "smtp.googlemail.com"
  :user "team@4clojure.com"
  :problem-submission true

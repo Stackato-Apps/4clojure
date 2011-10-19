@@ -6,10 +6,12 @@
         [foreclojure.users    :only [get-users]]))
 
 (defn connect-to-db []
-  (let [{:keys [db-user db-pwd db-host]} config]
+  (let [{:keys [db-user db-pwd db-host db-port db-dbname]} config]
+    (println "mongo connect: " db-user db-pwd db-host db-port db-dbname)
     (mongo!
      :host (or db-host "localhost")
-     :db "mydb")
+     :port db-port
+     :db (or db-dbname "mydb"))
     (when (and db-user db-pwd)
       (authenticate db-user db-pwd))))
 

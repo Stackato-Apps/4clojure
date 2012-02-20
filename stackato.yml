@@ -8,6 +8,5 @@ services:
 env:
   JVM_OPTS: "-Duser.home=$HOME"
 
-hooks:
-  pre-running:
-    - cp java.policy $HOME/.java.policy
+min_version:
+  server: 0.9

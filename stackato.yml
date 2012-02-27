@@ -7,6 +7,3 @@ services:
 
 env:
   JVM_OPTS: "-Duser.home=$HOME"
-
-min_version:
-  server: 0.9

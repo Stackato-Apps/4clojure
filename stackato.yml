@@ -3,7 +3,7 @@ name: 4clojure
 mem: 512M
 
 services:
-  mongodb: mongo-4clojure
+  mongodb-4clojure: mongo
 
 env:
   JVM_OPTS: "-Duser.home=$HOME"

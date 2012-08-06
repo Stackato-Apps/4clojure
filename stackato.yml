@@ -1,9 +1,9 @@
 name: 4clojure
-
+framework: buildpack
 mem: 512M
-
+min_version:
+  client: 1.4.3
 services:
-  mongodb-4clojure: mongo
-
+  ${name}-db: mongo
 env:
   JVM_OPTS: "-Duser.home=$HOME"

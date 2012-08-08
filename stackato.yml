@@ -4,6 +4,6 @@ mem: 512M
 min_version:
   client: 1.4.3
 services:
-  ${name}-db: mongo
+  ${name}-db: mongodb
 env:
   JVM_OPTS: "-Duser.home=$HOME"
